@@ -3,12 +3,11 @@ on:
   push:
     branches: "**"
 env:
-  ENVIRONAME: 'madawaki'  
+  fsfdfsdf: 'madawaki'  
 
 jobs:
   PrintJob1:
-
     runs-on: ubuntu-latest
-
+    environment: dev
     steps:
     - run: echo "This is the value ${{ env.ENVIRONAME }}. Thanks."  
