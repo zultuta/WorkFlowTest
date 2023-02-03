@@ -6,8 +6,13 @@ env:
   fsfdfsdf: 'madawaki'  
 
 jobs:
-  PrintJob1:
+  DevJob:
     runs-on: ubuntu-latest
     environment: dev
     steps:
-    - run: echo "This is the value ${{ env.ENVIRONAME }}. Thanks."  
+    - run: echo "This is the value ${{ secrets.ASIRI }}. Thanks."  
+  TestJob:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+    - run: echo "This is the value ${{ secrets.ASIRI }}. Thanks."  
