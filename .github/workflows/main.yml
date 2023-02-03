@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev
     steps:
-    - run: echo "This is the value ${{ secrets.ASIRI }}. Thanks."  
+    - run: echo "This is the value ${{ vars.ENVIRONAME }}. Thanks."  
   TestJob:
     runs-on: ubuntu-latest
     environment: test
     steps:
-    - run: echo "This is the value ${{ secrets.ASIRI }}. Thanks."  
+    - run: echo "This is the value ${{ vars.ENVIRONAME }}. Thanks."  
