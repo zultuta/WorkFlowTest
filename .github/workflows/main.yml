@@ -1,8 +1,9 @@
 name: JUST Print
-
 on:
   push:
     branches: "**"
+env:
+  AZURE_FUNCTIONAPP_NAME: 'legacy-txn-to-data-lake'  
 
 jobs:
   PrintJob1:
@@ -10,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo "This job was triigeer by a ${{ github.event_name}} event."  
+    - run: echo "This is the value ${{ env.AZURE_FUNCTIONAPP_NAME }}. Thanks."  
