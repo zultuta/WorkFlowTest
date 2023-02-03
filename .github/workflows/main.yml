@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev
     steps:
-    - run: echo "This is the value ${{ ENVIRONAME }}. Thanks."  
+    - run: echo "This is the value ${{ dev.ENVIRONAME }}. Thanks."  
