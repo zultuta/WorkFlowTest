@@ -1,0 +1,13 @@
+name: JUST Print
+
+on:
+  push:
+    branches: "**"
+
+jobs:
+  PrintJob1:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo "This job was triigeer by a ${{ github.event_name}} event."  
