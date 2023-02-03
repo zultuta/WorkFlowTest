@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo "This is the value ${{ env.AZURE_FUNCTIONAPP_NAME }}. Thanks."  
+    - run: echo "This is the value ${{ env.ENVIRONAME }}. Thanks."  
