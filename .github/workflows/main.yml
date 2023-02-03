@@ -3,7 +3,7 @@ on:
   push:
     branches: "**"
 env:
-  AZURE_FUNCTIONAPP_NAME: 'legacy-txn-to-data-lake'  
+  ENVIRONAME: 'madawaki'  
 
 jobs:
   PrintJob1:
